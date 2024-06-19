@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        body{
+            display: flex;
+            gap: 50px;
+
+        }
+        ul {
+            list-style: none;
+            padding: 5px 5px 0 5px;
+            border: 1px solid black;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .vert {
+            flex-direction: column;
+        }
+        .vert li{
+            background-color: #acd5e3;
+        }
+
+        .hor {
+            flex-direction: row;
+        }
+
+        #two {
+            background-color: orange;
+            color: white;
+        }
+
+        ul li {
+            padding: 10px;
+            color: blue;
+        }
+        .hor li{
+            background-color: rgb(212, 209, 209);
+            border: 0.5px solid;
+            border-top: 0;
+            border-bottom: 0;
+        }
+        .hor {
+            padding-bottom: 5px;
+            padding-right: 0px;
+        }
+        #three{
+            background-color: #7b7777;
+            color: white;
+        }
+        pre{
+            padding: 0px;
+            height: 0px;
+        }
+        div:nth-child(2){
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <b>Vertical Navigation bar</b>
+        <ul class="flex vert">
+            <li id="two">Home</li>
+            <li>Java</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Bootstrap</li>
+        </ul>
+    </div>
+    <div>
+        <b>Horizontal Navigation bar</b>
+        <ul class="flex hor">
+            <li id="three">Home</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li><pre>      </pre></li>
+        </ul>
+    </div>
+</body>
+
+</html>
